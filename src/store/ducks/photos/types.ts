@@ -1,9 +1,9 @@
 import { ResponseError } from "../../../services/api";
 
 export enum PhotosTypes {
-  "LOAD_REQUEST" = "@albums/LOAD_REQUEST",
-  "LOAD_SUCCESS" = "@albums/LOAD_SUCCESS",
-  "LOAD_FAILURE" = "@albums/LOAD_FAILURE",
+  "LOAD_REQUEST" = "@photos/LOAD_REQUEST",
+  "LOAD_SUCCESS" = "@photos/LOAD_SUCCESS",
+  "LOAD_FAILURE" = "@photos/LOAD_FAILURE",
 }
 
 export interface Photo {

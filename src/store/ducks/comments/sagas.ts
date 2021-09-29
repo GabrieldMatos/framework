@@ -7,7 +7,7 @@ import {
   loadCommentsFailure,
 } from "./actions";
 
-export function* loadPhotos({
+export function* loadComments({
   payload,
 }: ReturnType<typeof loadCommentsRequest>): any {
   try {

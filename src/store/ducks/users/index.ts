@@ -1,28 +1,28 @@
 import { Reducer } from "redux";
-import { PostsState, PostTypes } from "./types";
+import { UsersState, UsersTypes } from "./types";
 
-const INITIAL_STATE: PostsState = {
+const INITIAL_STATE: UsersState = {
   loading: false,
   data: [],
 };
 
-const reducer: Reducer<PostsState> = (
+const reducer: Reducer<UsersState> = (
   state = INITIAL_STATE,
   { payload, type }
 ) => {
   switch (type) {
-    case PostTypes.LOAD_REQUEST:
+    case UsersTypes.LOAD_REQUEST:
       return {
         ...state,
         loading: true,
       };
-    case PostTypes.LOAD_SUCCESS:
+    case UsersTypes.LOAD_SUCCESS:
       return {
         ...state,
         ...payload,
         loading: false,
       };
-    case PostTypes.LOAD_FAILURE:
+    case UsersTypes.LOAD_FAILURE:
       return {
         ...state,
         ...payload,

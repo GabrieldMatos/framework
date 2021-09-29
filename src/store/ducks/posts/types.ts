@@ -13,7 +13,7 @@ export interface Post {
   body: string;
 }
 
-export interface PostState {
+export interface PostsState {
   loading: boolean;
   data: Post[];
   error?: ResponseError;
